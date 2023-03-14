@@ -1,0 +1,70 @@
+.container {
+    height: calc(100vh - 60px);
+    width: 100%;
+}
+
+.wrapper {
+    width: 70%;
+    height: 100%;
+    display: flex;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.coverPicture {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.profilePicture {
+    position: absolute;
+    border-radius: 50%;
+    width: 125px;
+    object-fit: cover;
+    top: 12.5rem;
+    left: 45%;
+}
+
+.username {
+    display: flex;
+    justify-content: center;
+    margin-top: 7.5rem;
+    color: #222;
+    font-size: 28px;
+    margin-bottom: 2.5rem;
+}
+
+.posts {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    width: 100%;
+}
+
+.followBtn{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.25rem 0.75rem;
+    background-color: blue;
+    color: #fff;
+    outline: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    margin-left: auto;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.followBtn:hover{
+    background-color: #fff;
+    color: blue;
+    border-color: blue;
+}

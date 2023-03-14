@@ -1,0 +1,17 @@
+.container{
+    height: 100%;
+    width: 100%;
+    padding-bottom: 5rem;
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1.25fr 4fr;
+    grid-gap: 7.5rem;
+}

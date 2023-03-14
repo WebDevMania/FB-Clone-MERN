@@ -1,0 +1,147 @@
+/* posts */
+.post {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #999;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.top{
+    padding: 1rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topLeft {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.topLeft>.postAuthorImg {
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.postDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.postDetails>span:first-child {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.postDetails>.date {
+    font-size: 15px;
+    color: #333;
+}
+
+.desc {
+    padding: 0.5rem;
+    color: #666;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+}
+
+.postImgContainer {
+    width: 100%;
+    height: 450px;
+}
+
+.postImgContainer>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.actions {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #777;
+}
+
+.action {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 18px;
+    color: #555;
+    cursor: pointer;
+}
+
+.commentSection>textarea {
+    flex: 1;
+    padding: 0.25rem;
+    padding-left: 1rem;
+    height: 32px;
+    outline: none;
+    border: none;
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+    resize: none;
+}
+
+.commentSection>button {
+    padding: 0.25rem 0.5rem;
+    height: 32px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #2626de;
+    border: 1px solid transparent;
+}
+
+.commentSection>button:hover {
+    background-color: #fff;
+    border-color: #2626de;
+    color: #2626de;
+}
+
+.commentSection {
+    margin-top: 1rem;
+    padding: 1rem 0;
+    height: 40px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.comments{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 0.5rem;
+}
+
+.deleteModal{
+    position: absolute;
+    right: 0.4rem;
+    top: 2.75rem;
+    width: 100px;
+    height: 50px;
+    background-color: #efefef;
+    color: #222;
+    word-break: keep-all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 150ms;
+}
+
+.deleteModal:hover{
+   color: #666;
+}

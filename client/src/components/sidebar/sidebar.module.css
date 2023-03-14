@@ -1,0 +1,28 @@
+.container {
+    height: calc(100vh - 60px);
+    width: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
+    padding-left: 1rem;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #1114c1;
+    transition: 250ms all;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.item:hover{
+    scale: 1.03;
+    color: #1316d1;
+}
